@@ -111,6 +111,7 @@ const getAllNft = async (req, res) => {
 
 const getNameNft = async (req, res) => {
   const { name } = req.query;
+  console.log(name);
   if (req.query.name && req.query.name.length >= 3) {
     try {
       const cursor = req.query.cursor ? req.query.cursor : null;
